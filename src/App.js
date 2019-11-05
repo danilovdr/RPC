@@ -1,6 +1,6 @@
 import React from 'react';
 import {HashRouter, Route} from "react-router-dom";
-import Header from './components/header/header';
+import Header from './components/header/index';
 import Login from './pages/login/index';
 import Register from './pages/register/index';
 import User from './pages/user/index';

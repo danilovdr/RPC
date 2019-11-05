@@ -36,7 +36,7 @@ class Info extends React.Component {
                         <div className="info__change change">
 
                             <input className="input change__input" placeholder="Введите имя"></input>
-                            <button className="btn change__btn">Принять</button>
+                            <button className="btn btn-save change__btn">Принять</button>
                         </div>
                     </div>
                     <div className="list__item">
@@ -44,7 +44,7 @@ class Info extends React.Component {
                         <p className="info__text">{this.state.nickname} Никнейм</p>
                         <div className="info__change change">
                             <input className="input change__input" placeholder="Введите никнейм"></input>
-                            <button className="btn change__btn">Принять</button>
+                            <button className="btn btn-save change__btn">Принять</button>
                         </div>
                     </div>
                     <div className="list__item">
@@ -56,7 +56,7 @@ class Info extends React.Component {
                         <p className="info__text">{this.state.email} user@example.com</p>
                         <div className="info__change change">
                             <input className="input change__input" placeholder="Введите email"></input>
-                            <button className="btn change__btn">Принять</button>
+                            <button className="btn btn-save change__btn">Принять</button>
                         </div>
                     </div>
                     <div className="list__item">
@@ -66,7 +66,7 @@ class Info extends React.Component {
                             <input className="input change__input" placeholder="Введите старый пароль" type="password"></input>
                             <input className="input change__input" placeholder="Введите новый пароль" type="password"></input>
                             <input className="input change__input" placeholder="Подвердите пароль" type="password"></input>
-                            <button className="btn change__btn">Принять</button>
+                            <button className="btn btn-save change__btn">Принять</button>
                         </div>
                     </div>
                     <div className="list__item">
@@ -74,21 +74,19 @@ class Info extends React.Component {
                         <p className="info__text">{this.state.about}Злобный веган как нэйт диаз</p>
                         <div className="info__change change">
                             <textarea className="text_area change__text_area" placeholder="Расскажите о себе..."></textarea>
-                            <button className="btn change__btn">Принять</button>
+                            <button className="btn btn-save change__btn">Принять</button>
                         </div>
                     </div>
-                    <div className="list__item">
-                        <button className="info__exit">Выйти</button>
+                    <div className="list__item action">
+                        <button className="btn btn-save_all">Сохранить все</button>
                     </div>
                 </div>
                 <div className="userpic info__userpic">
                     <img className="userpic__img" src={Userpic} alt="userpic"></img>
                     <div className="change userpic__change">
-                        
+                        {/* todo//доделать */}
                     </div>
                 </div>
-
-
             </div>
         );
     }
