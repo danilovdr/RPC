@@ -3,7 +3,7 @@ import {HashRouter, Route} from "react-router-dom";
 import Header from './components/header/header';
 import Login from './pages/login/index';
 import Register from './pages/register/index';
-// import User from './pages/user/user';
+import User from './pages/user/index';
 // import Beer from './pages/beer/beer';
 // import Friends from './pages/friend/friends';
 import Evangelie from './pages/evangelie/index';
@@ -19,7 +19,7 @@ function App() {
         {/* <Route path="/beer" component={Beer}/> */}
         <Route path="/login" component={Login}/>
         <Route path="/register" component={Register}/>
-        {/* <Route path="/user" component={User}/> */}
+        <Route path="/user" component={User}/>
         {/* <Route path="/friends" component={Friends}/>  */}
         <Route path="/evangelie" component={Evangelie}/>
         {/* <Route path="/messages" component={Messages}/> */}

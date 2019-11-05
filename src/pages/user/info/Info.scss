@@ -1,0 +1,15 @@
+$bottun-color: #00a3c0;
+$bottum-color-active: #ffd400;
+
+.info {
+    width: 800px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 25px auto;
+
+    background-color: white;
+
+    &__userpic {
+        width: 250px;
+    }
+}
