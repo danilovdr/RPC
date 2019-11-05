@@ -13,7 +13,14 @@ class Info extends React.Component {
             nickname: "",
             login: "",
             email: "",
-            about: ""
+            about: "",
+            user: {
+                name: "",
+                nickname: "",
+                login: "",
+                email: "",
+                about: ""
+            }
         };
 
         this.getUser = this.getUser.bind(this);
@@ -22,35 +29,71 @@ class Info extends React.Component {
     render() {
         return (
             <div className="info">
-                <img className="info__userpic" src={Userpic} alt="userpic"></img>
                 <div className="list info__list">
                     <div className="list__item">
-                        <p className="info__name">{this.state.name}</p>
+                        <p className="info__title">Имя фамилия</p>
+                        <p className="info__text">{this.state.user.name} Имя фамилия</p>
+                        <div className="info__change change">
+
+                            <input className="input change__input" placeholder="Введите имя"></input>
+                            <button className="btn change__btn">Принять</button>
+                        </div>
                     </div>
                     <div className="list__item">
-                        <p className="info__nickname">{this.state.nickname}</p>
+                        <p className="info__title">Никнейм</p>
+                        <p className="info__text">{this.state.nickname} Никнейм</p>
+                        <div className="info__change change">
+                            <input className="input change__input" placeholder="Введите никнейм"></input>
+                            <button className="btn change__btn">Принять</button>
+                        </div>
                     </div>
                     <div className="list__item">
-                        <p className="info__login">{this.state.login}</p>
+                        <p className="info__title">Логин</p>
+                        <p className="info__text">{this.state.login} Логин</p>
                     </div>
                     <div className="list__item">
-                        <p className="info__email">{this.state.email}</p>
+                        <p className="info__title">Email</p>
+                        <p className="info__text">{this.state.email} user@example.com</p>
+                        <div className="info__change change">
+                            <input className="input change__input" placeholder="Введите email"></input>
+                            <button className="btn change__btn">Принять</button>
+                        </div>
                     </div>
                     <div className="list__item">
-                        <p className="info__password">*************</p>
+                        <p className="info__title">Пароль</p>
+                        <p className="info__text">*************</p>
+                        <div className="info__change change">
+                            <input className="input change__input" placeholder="Введите старый пароль" type="password"></input>
+                            <input className="input change__input" placeholder="Введите новый пароль" type="password"></input>
+                            <input className="input change__input" placeholder="Подвердите пароль" type="password"></input>
+                            <button className="btn change__btn">Принять</button>
+                        </div>
                     </div>
                     <div className="list__item">
-                        <p className="info__about">{this.state.about}</p>
+                        <p className="info__title">Обо мне</p>
+                        <p className="info__text">{this.state.about}Злобный веган как нэйт диаз</p>
+                        <div className="info__change change">
+                            <textarea className="text_area change__text_area" placeholder="Расскажите о себе..."></textarea>
+                            <button className="btn change__btn">Принять</button>
+                        </div>
                     </div>
                     <div className="list__item">
                         <button className="info__exit">Выйти</button>
                     </div>
                 </div>
+                <div className="userpic info__userpic">
+                    <img className="userpic__img" src={Userpic} alt="userpic"></img>
+                    <div className="change userpic__change">
+                        
+                    </div>
+                </div>
+
+
             </div>
         );
     }
 
-    getUser(){
+    getUser() {
 
     }
 }

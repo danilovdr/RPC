@@ -2,14 +2,91 @@ $bottun-color: #00a3c0;
 $bottum-color-active: #ffd400;
 
 .info {
-    width: 800px;
+    width: 750px;
     border: 1px solid black;
     border-radius: 5px;
     margin: 25px auto;
 
+    display: flex;
+    justify-content: space-between;
     background-color: white;
 
     &__userpic {
-        width: 250px;
+        margin: 25px 25px 0;
+        align-self: flex-start;
     }
+
+    &__list {
+        margin: 25px 0 25px 25px;
+    }
+
+    &__title {
+        margin-top: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-family: "Roboto", sans-serif;
+        font-size: 14pt;
+    }
+}
+
+.userpic {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.list {
+    width: 500px;
+
+    &__item {
+        margin-bottom: 15px;
+    }
+}
+
+.change {
+    &__input {
+        display: block;
+        margin-top: 15px;
+    }
+
+    &__btn {
+        display: block;
+        margin-top: 10px;
+    }
+
+    &__text_area {
+        max-width: 350px;
+        min-width: 350px;
+    }
+}
+
+.input {
+    width: 350px;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.text_area {
+    padding: 5px 0 0 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
