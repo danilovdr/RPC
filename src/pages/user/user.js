@@ -1,7 +1,7 @@
 import React from 'react';
 import './user.scss';
 import Userpic from './img/userpic.png';
-import Item from '../../beer/main/item';
+import Item from '../../beer/party/item';
 
 class User extends React.Component {
     constructor(props) {

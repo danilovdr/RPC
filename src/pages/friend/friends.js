@@ -2,7 +2,7 @@ import React from 'react';
 import './friends.scss';
 import Hello from './img/hello.png';
 import Friend from './friend';
-import Item from '../beer/main/item';
+import Item from '../beer/party/item';
 
 class Friends extends React.Component {
     constructor(props) {

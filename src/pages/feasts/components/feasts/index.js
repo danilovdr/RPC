@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Item from './item';
+import Item from './components/Feast';
 
 function Items(props) {
     const [items, setItems] = useState([])
