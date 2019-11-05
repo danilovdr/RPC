@@ -10,7 +10,7 @@ function Header() {
             <div className="menu header__menu">
                 <NavLink exact to="/" className="menu__item">Главная</NavLink>
                 <NavLink to="/beer" className="menu__item">Пиры</NavLink>
-                <NavLink to="/messages" className="menu__item">Братья</NavLink>
+                <NavLink to="/friends" className="menu__item">Братья</NavLink>
                 <NavLink to="/evangelie" className="menu__item">Писание</NavLink>
                 <NavLink to="/user" className="menu__item">Профиль</NavLink>
                 <NavLink to="/login" className="menu__item">Войти</NavLink>
