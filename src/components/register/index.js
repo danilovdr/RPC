@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 
-import Form from './components/form/Form';
+import Form from './form/Form';
 
 function Register(props) {
    return (

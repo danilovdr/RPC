@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Item from './components/Feast';
+import './FeastsList.scss';
 
-function Items(props) {
+import Feast from './feast/Feast';
+
+function FeastsList(props) {
     const [items, setItems] = useState([])
 
     useEffect(() => {
@@ -23,11 +25,11 @@ function Items(props) {
         <div className="items">
             {
                 items.map((val, num) => {
-                    return <Item key={val.id} {...val} />
+                    return <Feast key={val.id} {...val} />
                 })
             }
         </div>
     );
 }
 
-export default Items;
+export default FeastsList;

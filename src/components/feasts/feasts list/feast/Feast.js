@@ -1,8 +1,8 @@
 import React from 'react';
 // import Alco from './img/alco.png';
-import './item.scss';
+import './Feast.scss';
 
-class Item extends React.Component {
+class Feast extends React.Component {
     constructor(props) {
         super(props);
 
@@ -38,4 +38,4 @@ class Item extends React.Component {
     }
 }
 
-export default Item;
+export default Feast;

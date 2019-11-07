@@ -1,5 +1,5 @@
 import React from 'react';
-import './add.scss';
+import './Add.scss';
 
 class Add extends React.Component {
     constructor(props) {

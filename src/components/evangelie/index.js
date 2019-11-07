@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.scss';
 
-import Search from './components/search/Search';
-import Text from './components/text/Text';
+import Search from './search/Search';
+import Text from './text/Text';
 
 function Evangelie() {
     return (

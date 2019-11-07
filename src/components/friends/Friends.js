@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './Friends.scss';
 
 import Nav from './nav/Nav';
 import Profile from './profile/Profile';

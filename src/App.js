@@ -1,14 +1,14 @@
 import React from 'react';
 import {HashRouter, Route} from "react-router-dom";
-import Header from './components/header/index';
-import Login from './pages/login/index';
-import Register from './pages/register/index';
-import User from './pages/user/index';
-// import Beer from './pages/beer/beer';
-import Friends from './pages/friends/index';
-import Evangelie from './pages/evangelie/index';
-// import Main from './pages/main/main';
-// import Messages from './pages/messages/messages';
+import Header from './components/header/Header';
+import Login from './components/login/index';
+import Register from './components/register/index';
+import User from './components/user/index';
+import Beer from './components/feasts/Feasts';
+import Friends from './components/friends/Friends';
+import Evangelie from './components/evangelie/index';
+// import Main from './components/main/main';
+// import Messages from './components/messages/messages';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         <Header/>
         {/* {<Route exact path='/' component={Main}/> */}
-        {/* <Route path="/beer" component={Beer}/> */}
+        <Route path="/feasts" component={Beer}/>
         <Route path="/login" component={Login}/>
         <Route path="/register" component={Register}/>
         <Route path="/user" component={User}/>
