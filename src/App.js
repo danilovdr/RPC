@@ -6,7 +6,7 @@ import Register from './components/register/index';
 import User from './components/user/index';
 import Beer from './components/feasts/Feasts';
 import Friends from './components/friends/Friends';
-import Evangelie from './components/evangelie/index';
+import Evangelie from './components/evangelie/Evangelie';
 // import Main from './components/main/main';
 // import Messages from './components/messages/messages';
 

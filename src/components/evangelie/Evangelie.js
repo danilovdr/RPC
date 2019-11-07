@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './Evangelie.scss';
 
 import Search from './search/Search';
 import Text from './text/Text';
